@@ -9,8 +9,8 @@ app.config["SECRET_KEY"] = "Zmy04527"#密钥
 db = SQLAlchemy(app) #实例化
 
 #创建表
-class Information(db.Model):
-    __tablename__ = "information"
+class TODOLIST(db.Model):
+    __tablename__ = "todolist"
     id = db.Column(db.Integer, primary_key=True)#主键
     title = db.Column(db.String(64), nullable=False)
     content = db.Column(db.String(1500), nullable=False)
