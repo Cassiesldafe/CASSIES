@@ -1,7 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 import pymysql
-
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:Zmy04527Sl0040@127.0.0.1:3306/test"
 #app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///"+"/home/lmp/"
